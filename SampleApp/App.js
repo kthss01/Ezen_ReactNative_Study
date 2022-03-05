@@ -26,6 +26,22 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import styled from 'styled-components/native';
+
+const Container = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5fcff;
+`;
+
+const MainText = styled.Text`
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  color: red;
+`;
+
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
