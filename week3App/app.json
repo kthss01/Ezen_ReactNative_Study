@@ -1,0 +1,13 @@
+{
+  "name": "week3App",
+  "displayName": "week3App",
+  "expo": {
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "userInterfaceStyle": "automatic"
+    },
+    "android": {
+      "userInterfaceStyle": "automatic"
+    }
+  }
+}
