@@ -6,8 +6,12 @@ import {Provider as PaperProvider} from 'react-native-paper';
 import {DefaultTheme, DarkTheme} from 'react-native-paper';
 import MainNavigator from './src/screens/MainNavigator';
 import {ToggleThemeProvider} from './src/contexts';
+import {LogBox} from 'react-native';
 
 export default function App() {
+  LogBox.ignoreLogs(['new NativeEventEmitter']); // Ignore log notification by message
+  //LogBox.ignoreAllLogs(); //Ignore all log notifications
+
   // useColorScheme라는 함수를 실행시켜서 return
   const scheme = useColorScheme(); //현재 디바이스 사용중인 스키마 정보 획득
   // useState훅사용
